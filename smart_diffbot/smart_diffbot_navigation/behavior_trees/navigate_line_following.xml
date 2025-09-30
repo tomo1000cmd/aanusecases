@@ -1,0 +1,47 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+
+    <!-- Docking behavior tree -->
+
+    <Sequence> <!-- Navigate to goal -> follow line -->
+
+      <!-- Navigate to goal -->
+      <RecoveryNode number_of_retries="6" name="NavigateRecovery">
+
+        <!-- Planning and following path -->
+        <PipelineSequence name="NavigateWithReplanning">
+          <RateController hz="1">
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+          </RateController>
+          <FollowPath path="{path}" controller_id="FollowPath"/>
+        </PipelineSequence>
+
+        <!-- Recovery -->
+        <ReactiveFallback name="NavigateRecoveryFallback">
+          <GoalUpdated/>
+          <RoundRobin name="NavigateRecoveryActions">
+           
+            <Spin spin_dist="1.57"/>
+            <BackUp backup_dist="0.50" backup_speed="0.2"/>
+          </RoundRobin>
+        </ReactiveFallback>
+
+      </RecoveryNode>
+
+
+      <!-- Follow line -->
+      <RecoveryNode number_of_retries="20" name="FollowLineRecovery">
+
+        <!-- Line following action-->
+        <FollowLine speed="0.6"/>
+
+        <!-- Recovery -->
+        <Fallback name="FollowLineRecoveryFallback">
+          <Spin spin_dist="0.35"/>
+        </Fallback>
+
+      </RecoveryNode>
+
+    </Sequence>
+  </BehaviorTree>
+</root>

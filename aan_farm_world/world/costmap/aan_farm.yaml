@@ -1,0 +1,7 @@
+image: aan_farm.png
+mode: trinary
+resolution: 0.01 # 1 cm = 1 px
+origin: [0, 0, 0]
+negate: 0
+occupied_thresh: 0.2
+free_thresh: 0.1

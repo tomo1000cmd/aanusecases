@@ -1,0 +1,61 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Parallel success_threshold="1" failure_threshold="1">
+      
+      <!-- Robot 2 Sequential Tasks -->
+      <Sequence name="Robot2TaskSequence">
+        
+        <!-- Step 1: Navigate to Pose -->
+        <ReactiveSequence name="NavigateToPoseSequence">
+          <AbstractConditionMet robot="diffbot_2"/>
+          <SubTree ID="NavigateToPose" robot="diffbot_2"/>
+        </ReactiveSequence>
+        
+        <!-- Step 2: Navigate Exact Path -->
+        <ReactiveSequence name="NavigateExactPathSequence">
+          <AbstractConditionMet robot="diffbot_2"/>
+          <SubTree ID="NavigateExactPath" robot="diffbot_2"/>
+        </ReactiveSequence>
+        
+        <!-- Step 3: Row Follow -->
+        <ReactiveSequence name="RowFollowSequence">
+          <AbstractConditionMet robot="diffbot_2"/>
+          <SubTree ID="NavigateRowFollowing" robot="diffbot_2"/>
+        </ReactiveSequence>
+        
+        <!-- Step 4: Dock -->
+        <ReactiveSequence name="DockSequence">
+          <AbstractConditionMet robot="diffbot_2"/>
+          <SubTree ID="NavigateDocking" robot="diffbot_2"/>
+        </ReactiveSequence>
+        
+        <!-- Recovery Mechanism -->
+        <RecoveryNode number_of_retries="3" name="Robot2Recovery">
+          <Fallback name="Robot2RecoveryFallback">
+            <GoalUpdated/>
+            <Spin spin_dist="1.57"/>
+            <BackUp backup_dist="0.30" backup_speed="0.05"/>
+          </Fallback>
+        </RecoveryNode>
+      </Sequence>
+      
+    </Parallel>
+  </BehaviorTree>
+  
+  <!-- Subtrees for different tasks -->
+  <BehaviorTree ID="NavigateToPose">
+    <Include filename="navigate_to_pose.xml"/>
+  </BehaviorTree>
+  
+  <BehaviorTree ID="NavigateExactPath">
+    <Include filename="navigate_exact_path.xml"/>
+  </BehaviorTree>
+  
+  <BehaviorTree ID="NavigateRowFollowing">
+    <Include filename="navigate_row_following.xml"/>
+  </BehaviorTree>
+  
+  <BehaviorTree ID="NavigateDocking">
+    <Include filename="navigate_docking.xml"/>
+  </BehaviorTree>
+</root>

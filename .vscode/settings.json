@@ -1,0 +1,42 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/hpws/aan_usecase/build/smart_diffbot_scripts",
+        "/home/hpws/aan_usecase/install/smart_diffbot_scripts/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/install/smart_diffbot_msgs/local/lib/python3.10/dist-packages",
+        "/home/hpws/aan_usecase/build/smart_diffbot_clients",
+        "/home/hpws/aan_usecase/install/smart_diffbot_clients/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/rqt_joint_trajectory_controller",
+        "/home/hpws/aan_usecase/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/ros2_controllers_test_nodes",
+        "/home/hpws/aan_usecase/install/ros2_controllers_test_nodes/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages",
+        "/home/hpws/aan_usecase/build/ros2_aruco",
+        "/home/hpws/aan_usecase/install/ros2_aruco/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/durablecase_supervisory_control",
+        "/home/hpws/aan_usecase/install/durablecase_supervisory_control/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/aan_navigation_clients",
+        "/home/hpws/aan_usecase/install/aan_navigation_clients/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/hpws/aan_usecase/build/smart_diffbot_scripts",
+        "/home/hpws/aan_usecase/install/smart_diffbot_scripts/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/install/smart_diffbot_msgs/local/lib/python3.10/dist-packages",
+        "/home/hpws/aan_usecase/build/smart_diffbot_clients",
+        "/home/hpws/aan_usecase/install/smart_diffbot_clients/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/rqt_joint_trajectory_controller",
+        "/home/hpws/aan_usecase/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/ros2_controllers_test_nodes",
+        "/home/hpws/aan_usecase/install/ros2_controllers_test_nodes/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages",
+        "/home/hpws/aan_usecase/build/ros2_aruco",
+        "/home/hpws/aan_usecase/install/ros2_aruco/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/durablecase_supervisory_control",
+        "/home/hpws/aan_usecase/install/durablecase_supervisory_control/lib/python3.10/site-packages",
+        "/home/hpws/aan_usecase/build/aan_navigation_clients",
+        "/home/hpws/aan_usecase/install/aan_navigation_clients/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

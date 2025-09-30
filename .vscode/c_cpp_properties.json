@@ -1,0 +1,61 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hpws/aan_usecase/install/velocity_controllers/include/**",
+        "/home/hpws/aan_usecase/install/tricycle_steering_controller/include/**",
+        "/home/hpws/aan_usecase/install/tricycle_controller/include/**",
+        "/home/hpws/aan_usecase/install/bicycle_steering_controller/include/**",
+        "/home/hpws/aan_usecase/install/ackermann_steering_controller/include/**",
+        "/home/hpws/aan_usecase/install/steering_controllers_library/include/**",
+        "/home/hpws/aan_usecase/install/smart_diffbot_msgs/include/**",
+        "/home/hpws/aan_usecase/install/smart_diffbot_hardware/include/**",
+        "/home/hpws/aan_usecase/install/ros2_aruco_interfaces/include/**",
+        "/home/hpws/aan_usecase/install/range_sensor_broadcaster/include/**",
+        "/home/hpws/aan_usecase/install/position_controllers/include/**",
+        "/home/hpws/aan_usecase/install/admittance_controller/include/**",
+        "/home/hpws/aan_usecase/install/joint_trajectory_controller/include/**",
+        "/home/hpws/aan_usecase/install/joint_state_broadcaster/include/**",
+        "/home/hpws/aan_usecase/install/imu_sensor_broadcaster/include/**",
+        "/home/hpws/aan_usecase/install/ign_ros2_control/include/**",
+        "/home/hpws/aan_usecase/install/gripper_controllers/include/**",
+        "/home/hpws/aan_usecase/install/effort_controllers/include/**",
+        "/home/hpws/aan_usecase/install/forward_command_controller/include/**",
+        "/home/hpws/aan_usecase/install/force_torque_sensor_broadcaster/include/**",
+        "/home/hpws/aan_usecase/install/diff_drive_controller/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/ackermann_steering_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/admittance_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/bicycle_steering_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/diff_drive_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/effort_controllers/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/force_torque_sensor_broadcaster/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/forward_command_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/gripper_controllers/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/imu_sensor_broadcaster/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/joint_state_broadcaster/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/joint_trajectory_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/position_controllers/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/range_sensor_broadcaster/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/steering_controllers_library/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/tricycle_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/tricycle_steering_controller/include/**",
+        "/home/hpws/aan_usecase/src/ros2_controllers/velocity_controllers/include/**",
+        "/home/hpws/aan_usecase/src/smart_diffbot/gz_ros2_control/ign_ros2_control/include/**",
+        "/home/hpws/aan_usecase/src/smart_diffbot/smart_diffbot_hardware/include/**",
+        "/home/hpws/aan_usecase/src/smart_diffbot/smart_diffbot_navigation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

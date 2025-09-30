@@ -1,0 +1,15 @@
+<root>
+   <TreeNodesModel>
+      <Node ID="NavigateRecovery" Type="Control"/>
+      <Node ID="NavigateWithReplanning" Type="Control"/>
+      <Node ID="RateController" Type="Decorator"/>
+      <Node ID="ComputePathToPose" Type="Action"/>
+      <Node ID="FollowPath" Type="Action"/>
+      <Node ID="RecoveryFallback" Type="Control"/>
+      <Node ID="GoalUpdated" Type="Condition"/>
+      <Node ID="RecoveryActions" Type="Control"/>
+      <Node ID="Spin" Type="Action"/>
+      <Node ID="BackUp" Type="Action"/>
+      <Node ID="Wait" Type="Action"/>
+   </TreeNodesModel>
+</root>
